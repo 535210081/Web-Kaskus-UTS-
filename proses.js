@@ -1,6 +1,6 @@
 let usernameInput = document.getElementById('usernameInput');
 let passwordInput = document.getElementById('passwordInput');
-
+const body_blur = document.querySelector('body');
 
     function login(){
         console.log('tombol login berhasil di klik');
@@ -22,6 +22,7 @@ let passwordInput = document.getElementById('passwordInput');
             icon: "warning",
             buttons: true,
             dangerMode: true,
+            
             })
             .then((willDelete) => {
             if (willDelete) {
@@ -38,14 +39,19 @@ let passwordInput = document.getElementById('passwordInput');
                         $('#myModal').modal('hide');
                     }, 6e4);
                 });
+                $("#myModal").css("display","none");
                 body_blur.classList.remove('blur');
+                
             } else {
                 swal("Halaman kamu kembali semula");
+                $("#myModal").css("display","none");
                 body_blur.classList.remove('blur');
             }
             });
             kotak.style.display = "none";
             localStorage.setItem("role", "basic");
+            $("#myModal").css("display","none");
+            body_blur.classList.remove('blur');
         }
         else{
             swal({
@@ -74,7 +80,7 @@ icon_btn.addEventListener('click', function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-const body_blur = document.querySelector('body');
+
 
 function signin(){
     $("#myModal").css("display","block");
