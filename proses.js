@@ -60,7 +60,7 @@ let passwordInput = document.getElementById('passwordInput');
         }
         
     }
-
+    
 //button serach
 const icon_btn = document.querySelector('.icon');
 const search = document.querySelector('.search');
