@@ -72,12 +72,16 @@ icon_btn.addEventListener('click', function(){
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+const body_blur = document.querySelector('body');
+
 function signin(){
     $("#myModal").css("display","block");
+    body_blur.classList.add('blur');
 }
 
 span.onclick = function() {
     $("#myModal").css("display","none");
+    body_blur.classList.remove('blur');
 }
 
 // When the user clicks anywhere outside of the modal, close it

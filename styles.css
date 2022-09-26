@@ -4,13 +4,27 @@
 }
 
 body{
-    background-image: url('gif\ kota2.gif');
-    background-size: cover;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('gif\ kota2.gif');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden;
+    z-index: -1;
+}
+
+body.blur::before {
+    -webkit-filter: blur(10px);
+    z-index: 1;
 }
 
 .logoutama {
@@ -68,7 +82,7 @@ body{
     background-color:rgb(2, 200, 255, 0.80);
     border: none;
     font-weight: bold;
-
+    z-index: 3;
 }
 
 a{
