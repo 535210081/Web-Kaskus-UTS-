@@ -38,8 +38,10 @@ let passwordInput = document.getElementById('passwordInput');
                         $('#myModal').modal('hide');
                     }, 6e4);
                 });
+                body_blur.classList.remove('blur');
             } else {
                 swal("Halaman kamu kembali semula");
+                body_blur.classList.remove('blur');
             }
             });
             kotak.style.display = "none";
@@ -55,7 +57,7 @@ let passwordInput = document.getElementById('passwordInput');
             $("#myModal").css("display","none");
             //localStorage.setItem("role", "basic");
             // member.style.display = "block";
-            
+            body_blur.classList.remove('blur');
             
         }
         
