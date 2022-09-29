@@ -37,6 +37,11 @@ body.blur::before {
     margin: 5px;
 }
 
+.dscimage{
+    width: 100px ;
+    height: 100px ;
+}
+
 .row{
     border: 20 px solid green;
     padding-block:0rem;   
@@ -60,6 +65,8 @@ body.blur::before {
 .my-element {
     animation: backInDown;
     animation-duration: 2s;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);   
 }
 
 .my-element2 {
@@ -79,7 +86,7 @@ body.blur::before {
 
 
 .col{
-    background-color:rgba(251, 255, 2, 0.8);
+    background-color:rgba(2, 200, 255, 0.80);
     border: none;
     font-weight: bold;
     z-index: 3;
@@ -94,6 +101,11 @@ a{
     display: flex;
     padding-top: 9px;
     justify-content: space-evenly;
+    color: rgb(238, 255, 0);
+}
+
+.nav-link{
+    color: rgb(238, 255, 0);
 }
 
 .form-inline{
@@ -155,7 +167,7 @@ a{
 .search .icon {
     width: 35px;
     height: 35px;
-    border-color: rgb(33, 33, 151);
+    border-color: rgb(251, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
