@@ -37,18 +37,9 @@ body.blur::before {
     margin: 5px;
 }
 
-.dscimage{
-    width: 100px ;
-    height: 100px ;
-}
-
 .row{
     border: 20 px solid green;
     padding-block:0rem;   
-    /* width: 700px; */
-    /* top : 50%;
-    left : 50%;
-    transform: translate(-50%,-50%); */
     margin-left: 50px;
     margin-block: 100px;
     margin-right: 50px;
@@ -248,4 +239,51 @@ video {
 
 .pointer{
     cursor: pointer;
+}
+
+.content{
+    border-style: dashed;
+    border-color: transparent;
+    border: 20px;
+    display: flex;
+    justify-content:  space-evenly;
+}
+
+.propic{   
+    width: 50%;
+}
+
+.propic1{
+    width: 103%;
+}
+
+.propic2{
+    width: 77%;
+}
+
+.propic3{
+    width: 70%;
+}
+
+#title{
+    font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  1px 1px 5px rgb(170, 7, 240);
+    color: rgb(238, 255, 0);
+    margin: 0px;
+    padding: 1%;
+    text-align: center;
+}
+
+#pic1{
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 1%;
+    margin: 3%;
+}
+
+.texting{
+    font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  1px 1px 5px rgb(170, 7, 240);
+    color: rgb(238, 255, 0);
+    padding-bottom: -20%;
 }
