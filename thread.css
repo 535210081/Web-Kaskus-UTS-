@@ -26,6 +26,7 @@ a{
     margin:4px;
     border-radius: 5px;
     background-color:#E4D4C8;
+    opacity:75%;
 }
 
 .subforum-description *{
