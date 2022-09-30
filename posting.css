@@ -1,77 +1,70 @@
-.table-head{
-    display: flex;
-}
 
-.table-head div{
+.head{
+    display: flex;
+    background-color: #D0B49F;
     padding: 5px;
-    margin: 2px;
-    background-color: #B98853;
     font-weight: bold;
-    opacity: 65%;
+    font-size: 15px;
+    opacity: 70%;
 }
 
-.table-head .status{
-    flex: 5%;
+.authors{
+    flex: 20%;
 }
 
-.table-head .subjects{
-    flex: 70%;
+.content{
+    flex: 80%;
 }
 
-.table-head .replies{
-    flex: 10%;
-}
-
-.table-head .last-reply{
-    flex: 15%;
-}
-
-
-
-.table-row{
+.body{
     display: flex;
+    background-color: #B98853;
+    padding: 10px;
+    margin-top: 5px;
+    opacity: 80%;
 }
 
-.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
-    padding: 5px;
-    margin: 2px;
-    background-color: #B98853;
-    opacity: 65%;
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors img{
+    max-width: 50px;
+    max-height: 80px;
+}
+
+.body .content .comment button{
+    border:none;
+    padding:10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #fff;
+    cursor: pointer;
+    float: right;
+}
+
+/* comment section */
+.comment-area{
+    margin-bottom:50px;
+    opacity: 70%;
     
 }
 
-.table-row .status{
-    flex: 5%;
-    font-size: 30px;
-    text-align: center;
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
 }
 
-.table-row .subjects{
-    flex: 70%;
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.table-row .replies{
-    flex: 10%;
-}
-
-.table-row .last-reply{
-    flex: 15%;
-}
-
-
-.navigate{
-    margin-block: 20px;
-    font-weight: lighter;
-    font-size: 24px;
-}
-
-.navigate a{
-    color: #523A28;
-}
-
-.navigate a:hover{
-    color:#523A28;
-    font-weight: bolder;
+.comment-area input:hover{
+    border: solid 1px #523A28;
 }
 
 body{
@@ -84,7 +77,6 @@ body{
     padding:0;
     margin:0;
 }
-
 .navbar{
     display: flex;
     padding-top: 9px;
@@ -167,3 +159,12 @@ header{
     cursor: pointer;
 }
 
+.postimg{
+    flex:20%;
+    width: 500px;
+    opacity:100%;
+}
+
+.V{
+    width:25px;
+}
