@@ -1,0 +1,55 @@
+.container-creator {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-content{
+    display: flex;
+    margin-top: 50px;
+    width: 200vh;
+    justify-content: space-evenly;
+}
+
+.content {
+    
+}
+
+.propic{   
+    width: 100px;
+}
+
+.propic1{
+    width: 100px;
+}
+
+.propic2{
+    width: 100px;
+}
+
+.propic3{
+    width: 100px;
+}
+
+#title-creator{
+    position: absolute;
+    font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  1px 1px 5px rgb(170, 7, 240);
+    color: rgb(238, 255, 0);
+    margin: 0px;
+    padding: 1%;
+    text-align: center;
+}
+
+#pic1{
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 1%;
+    margin: 3%;
+}
+
+.texting{
+    font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  1px 1px 5px rgb(170, 7, 240);
+    color: rgb(238, 255, 0);
+    padding-bottom: -20%;
+}
