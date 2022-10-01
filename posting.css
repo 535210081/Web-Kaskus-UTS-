@@ -168,3 +168,13 @@ header{
 .V{
     width:25px;
 }
+
+
+.replyblock{
+    display: flex;
+    background-color: #D0B49F;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 70%;
+}
