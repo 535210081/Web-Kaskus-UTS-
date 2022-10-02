@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
-    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="posting.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
@@ -38,40 +38,53 @@
         </div>
      <div class="container">
   </header>
-  
-    <div class="container">
-        <!--Navigation-->
+       
         <div class="navigate">
-            <span><a href="thread.html">forum</a> >> <a href="">Maintenance for bug fix</a></span>
+            <span><a href="thread.html">Home</a> >> <a href="updatepatch.html">next MPL schedule</a> >> <a href="">MPL schedule</a></span>
         </div>
-        <!--Display posts table-->
-        <div class="posts-table">
-            <div class="table-head">
-                <div class="status">Status</div>
-                <div class="subjects">Subjects</div>
-                <div class="replies">Replies/Views</div>
-                <div class="last-reply">Last Reply</div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author : Admin </div>
+                <div class="content">Topic: Mobile Legend</div>
             </div>
-            <div class="table-row">
-                <div class="status"><i class="fa-solid fa-user"></i></i></div>
-                <div class="subjects">
-                    <a href="valmorantmainPOST1.html">Bug fix again?</a>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Admin</a></div>
+                    <img src="admin.jpg" alt="">
+                </div>
+                <div class="content">
+                    -Here is the upcoming MPL schedule (date will be posted later)
+                    <br>- Match 1 : EVOS vs GEEK
+                    <br>- Match 2 : ONC VS RRQ
+                    <br>- Match 3 : Aura vs BTR
+                    <br>- Match 4 : RBL vs AE
+                    <br>- Match 5 : BREN vs BLCK
+                    <br>Thats all for the schedule,comment is disabled to avoid spam (cause i dont want to be flooded with notification lmao
+                    
                     <br>
-                    <span>Started by <b><a href="">Necove</a></b> .</span>
-                </div>
-                <div class="replies">
-                     2 replies <br> 67 views
-                </div>
-
-                <div class="last-reply">
-                     Oct 27 2022
-                    <br>By <b><a href="">Kamikaze</a></b>
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
                 </div>
             </div>
         </div>
-          
 
-  
-    <script src="proses.js"></script>
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+        
+        <div class ="replyblock">
+            <div class="replyborder">Reply</div>
+        </div>
+        
+
+        
+    </div>
+ 
+    <script src="thread.js"></script>
 </body>
 </html>
