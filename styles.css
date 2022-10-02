@@ -68,7 +68,7 @@ body.blur::before {
 }
 
 .my-element2 {
-    animation: flipInY;
+    animation: zoomIn;
     animation-duration: 1.2s;
 }
 
