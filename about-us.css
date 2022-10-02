@@ -1,17 +1,54 @@
 .container-creator {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 .container-content{
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 200vh;
     justify-content: space-evenly;
 }
 
+.content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 350px;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+    z-index: 2;
+    animation: spin 1.5s infinite linear;
+}
+
+.content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 230px;
+    width: 150px;
+    background: black;
+    z-index: 2;
+}
+
 .content {
-    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 160px;
+    height: 240px;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .propic{   
@@ -30,7 +67,7 @@
     width: 100px;
 }
 
-#title-creator{
+#title-creator {
     position: absolute;
     font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow:  1px 1px 5px rgb(170, 7, 240);
@@ -38,18 +75,104 @@
     margin: 0px;
     padding: 1%;
     text-align: center;
+    z-index: 3;
 }
 
-#pic1{
+
+#pic1 {
     justify-content:space-evenly;
     text-align: center;
     padding: 1%;
     margin: 3%;
 }
 
-.texting{
+.texting {
     font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow:  1px 1px 5px rgb(170, 7, 240);
     color: rgb(238, 255, 0);
     padding-bottom: -20%;
+}
+
+.container-about-info {
+    position: relative;
+    height: 50vh;
+}
+
+.container-title {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-word {
+    position: relative;
+}
+
+.word {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+#pic1 {
+    position: relative;
+    z-index: 3;
+}
+
+.container-creator-area {
+    display: flex;
+    background: white;
+    position: relative;
+    width: inherit;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-creator-area::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 300vh;
+    width: 250vh;
+    background:conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    ); 
+    animation: spin 1.5s infinite linear;
+}
+.container-creator-area::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 51px;
+    width: 206vh;
+    background: black;
+    z-index: 1;
+}
+
+.container-area-box {
+    background:rgba(0, 0, 0, 0.6);
+    width: inherit;
+    height: inherit;
+}
+
+#discord-logo {
+    color: white;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(-360deg);
+    }
 }

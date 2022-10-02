@@ -1,4 +1,4 @@
-var words = ['About us','Creator'],
+var words = ['Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki'],
     part,
     i = 0,
     offset = 0,
@@ -37,7 +37,7 @@ var wordflick = function () {
         offset--;
       }
     }
-    $('#title-creator').text(part);
+    $('.word').text(part);
   },speed);
 };
 
