@@ -14,7 +14,7 @@ body::before {
     display: block;
     position: absolute;
     width: 250vw;
-    height: 250vh;
+    height: 275vh;
     background-image: url('gif\ kota2.gif');
     background-size: cover;
     background-repeat: no-repeat;
@@ -125,7 +125,9 @@ a{
     div .navbars {
         width: 50%;
     }
-
+    .container-content {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 1200px){
