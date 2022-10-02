@@ -113,3 +113,4 @@ function showIconBar(){
     navigation.classList.add("hide");
 }
 
+const content = document.getElementById("my-element3")

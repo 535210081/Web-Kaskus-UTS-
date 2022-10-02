@@ -23,9 +23,14 @@ body::before {
 }
 
 body.blur::before {
-    -webkit-filter: blur(10px);
     z-index: 1;
 }
+
+.parralax{
+    width:100%;
+    height:100%
+}
+
 
 .logoutama {
     padding-right: 10px;
@@ -63,7 +68,7 @@ body.blur::before {
 }
 
 .my-element2 {
-    animation: flipInY;
+    animation: zoomIn;
     animation-duration: 1.2s;
 }
 
@@ -75,6 +80,16 @@ body.blur::before {
 #my-element {
     animation: lightSpeedInRight;
     animation-duration: 3s; 
+}
+
+#my-element2 {
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+#my-element3.open {
+    animation: slideInDown;
+    animation-duration: 2s;
 }
 
 
@@ -238,4 +253,12 @@ video {
 
 .pointer{
     cursor: pointer;
+}
+
+.badge{
+    color:rgb(238, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    padding-block-start: 20px;
 }
