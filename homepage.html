@@ -8,6 +8,9 @@
   <title>Homepage</title>
 
   
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <link 
   rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
@@ -33,7 +36,7 @@
 
 <body>
 <!-- Nav-bar -->
-<header class="my-element">
+<header class="my-element" >
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" href="homepage.html">
@@ -49,7 +52,7 @@
       </a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav dropdown-toggle" data-toggle="dropdown" href="homepage.html" role="button" aria-expanded="false">GAMES</a>
+      <a class="nav dropdown-toggle"  data-aos="zoom-in" data-toggle="dropdown" href="homepage.html" role="button" aria-expanded="false">GAMES</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="https://m.mobilelegends.com/en"target="_blank">Mobile Legends</a>
         <a class="dropdown-item" href="https://playvalorant.com/id-id/"target="_blank">Valorant</a>
@@ -66,7 +69,7 @@
       <a class="nav-link" href="#" id="myBtn" onclick="signin()">SIGN IN!</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#creator-part">About Us</a>
+      <a class="nav-link" href="#creator-part" >About Us</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="thread.html">Discussion</a>
@@ -84,7 +87,7 @@
 </header>
 
   <!-- Scroll announcement -->
-<div class="my-element">
+<div class="my-element" >
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -93,7 +96,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active" >
-        <video autoplay muted id="trailer" width="250" height="650" controls >
+        <video autoplay muted id="trailer" width="250" height="650" >
           <source src="Exorcists Trailer-Mole.mp4" type="video/mp4">
         </video>
 
@@ -106,7 +109,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <video autoplay muted id="trailer" width="250" height="650" controls >
+        <video autoplay muted id="trailer" width="250" height="650" >
           <source src="KickOff Trailer-Valo.mp4" type="video/mp4">
         </video>
         <div class="carousel-caption d-md-block">
@@ -118,7 +121,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <video autoplay muted id="trailer" width="250" height="650" controls >
+        <video autoplay muted id="trailer" width="250" height="650"  >
           <source src="New feature Tariler-PUBG.mp4" type="video/mp4">
         </video>
         <div class="carousel-caption d-md-block">
@@ -139,8 +142,10 @@
   </div>
 </div>
 
-
-<div class="container-about-info">
+<!-- About US -->
+<br><br><br>
+<div>
+<div class="container-about-info" data-aos="fade-right"  data-aos-duration="2000">
   <div class="container-title">
     <h3 id="title-creator">About us</h3>
   </div>
@@ -148,40 +153,43 @@
   <div class="container-word">
     <div class="word"></div>
   </div>
+  
+</div>
+<div class="container-creator-area" data-aos="fade-right"  data-aos-duration="2000">
+<h3 role="button" onlick="thread.html" id = "title-creator">Go to Main Page</h3>
 </div>
 
-
-<div class="container-creator-area">
+<br><br><br>
+<div class="container-creator-area" data-aos="fade-down" >
   <h3 id="title-creator">Creator</h3>
 </div>
-
-<div class="container-area-box">
+<div class="container-area-box" >
     <div class="container-creator" id="creator-part">
       <div class="container-content">
-        <div class="content a">
+        <div class="content a" data-aos="flip-right"  data-aos-duration="3000">
             <div id="pic1" >
-                <h3 class="texting">Justin</h3> <br>
+                <h3 class="texting" data-aos="fade-right">Justin</h3> <br>
                 <img src="Asset/1.png" alt="Not available" class="propic"> <br>
                 <p class="texting">WindGaze#1303</p>
             </div>
           </div>
-            <div class="content b">
+            <div class="content b" data-aos="flip-right" data-aos-duration="3000">
               <div id="pic1" >
-                  <h3 class="texting">Steven</h3> <br>
+                  <h3 class="texting" data-aos="fade-up">Steven</h3> <br>
                   <img src="Asset/2.png" alt="Not available" class="propic1"> <br>
                   <p class="texting">Suki#0215</p>
             </div>
           </div>
-            <div class="content c">
+            <div class="content c" data-aos="flip-right" data-aos-duration="3000">
             <div id="pic1" >
-                    <h3 class="texting">Dony</h3> <br>
+                    <h3 class="texting" data-aos="fade-down">Dony</h3> <br>
                     <img src="Asset/3.png" alt="Not available" class="propic2"> <br>
                     <p class="texting">Woku#6594</p>
             </div>
           </div>
-            <div class="content d">
+            <div class="content d" data-aos="flip-right" data-aos-duration="3000">
                 <div id="pic1" >
-                    <h3 class="texting">Joseph</h3> <br>
+                    <h3 class="texting" data-aos="fade-left">Joseph</h3> <br>
                       <img src="Asset/4.png" alt="Not availabele" class="propic3"> <br>
                       <p class="texting">Boosted#9586</p>
             </div>
@@ -189,7 +197,9 @@
       </div>
     </div>
 </div>
+</div>
 
+<div class = "parralax footer"></div>
 
   <script>
     feather.replace()
@@ -215,7 +225,7 @@
                 
                 <div class="form-group">
                   <label id="my-element">UserName</label>
-                  <input type="text" class="form-control" id="usernameInput" placeholder="Username" required>
+                  <input type="text" class="form-control" id="usernameInput" placeholder="Username" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
@@ -231,6 +241,14 @@
       </div>
     </div>
 
+  
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</div>
+  
 </body>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -242,5 +260,6 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="animation-text.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
 </html>
