@@ -1,4 +1,4 @@
-var words = ['Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki Dony Justin Asep Suki'],
+var words = ['halo'],
     part,
     i = 0,
     offset = 0,

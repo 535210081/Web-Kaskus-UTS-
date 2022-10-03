@@ -134,6 +134,21 @@
     overflow: hidden;
 }
 
+#main_page:hover::after {
+    background: white;
+    transition: 1s;
+}
+
+.link_button {
+    position: absolute;
+    background: blue;
+    width: 206vh;
+    height: 50px;
+    z-index: 5;
+    opacity: 0%;
+
+}
+
 .container-creator-area::before {
     content: '';
     display: block;
