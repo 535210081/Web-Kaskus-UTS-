@@ -20,7 +20,7 @@ body::before {
     display: block;
     position: absolute;
     width: 250vw;
-    height: 275vh;
+    height: 260vh;
     background-image: url('gif\ kota2.gif');
     background-size: cover;
     background-repeat: no-repeat;
