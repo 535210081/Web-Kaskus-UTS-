@@ -109,6 +109,8 @@ header{
 .navbars:hover {
     font-size: 16px;
     transition: 0.7s;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 
@@ -133,6 +135,8 @@ header{
 .navbar{
     display:flex;
     align-items: center;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 .navigation{
     background-color:#D0B49F;
@@ -143,6 +147,8 @@ header{
     max-height: 80px;
     margin-right:10px;
     opacity: 65%;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .close-icon i{
@@ -154,6 +160,8 @@ header{
 .nav-list{
     list-style-type:none;
     overflow: hidden;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .nav-item a{
