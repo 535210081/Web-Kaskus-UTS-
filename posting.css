@@ -108,6 +108,40 @@ header{
 }
 
 .navbar{
+    display: flex;
+    padding-top: 9px;
+    animation: slideInLeft;
+    animation-duration: 2s;
+    
+}
+
+.navbars:hover {
+    font-size: 16px;
+    transition: 0.7s;
+    animation: slideInLeft;
+    animation-duration: 2s;
+}
+
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#fff;
+    color:#000000;
+}
+
+header{
+    margin-inline: 10px;
+}
+
+.navbar{
     display:flex;
     align-items: center;
 }
@@ -120,6 +154,8 @@ header{
     max-height: 80px;
     margin-right:10px;
     opacity: 65%;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .close-icon i{
@@ -131,6 +167,8 @@ header{
 .nav-list{
     list-style-type:none;
     overflow: hidden;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .nav-item a{
@@ -158,6 +196,7 @@ header{
     color: #B98853;
     cursor: pointer;
 }
+
 
 .postimg{
     flex:20%;
