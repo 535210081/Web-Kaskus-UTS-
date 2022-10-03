@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+nav .navbar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 50px;
+    background-color: brown;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    overflow: hidden;
+}
+
+nav .navbar::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 300vh;
+    height: 300vh;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    ); 
+    z-index: 1;
+    animation: spin 1.5s infinite linear;
+}
+
+nav .navbar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 300vh;
+    height: 43px;
+    background:rgb(75, 75, 75);
+    z-index: 2;
+}
+
+
+.navbar .theme-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 206vh;
+    z-index: 3;
+}
+
+.theme {
+    position: relative;
+    background-color: #b102b7;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 3;
+}
+
+.theme:hover {
+    transform: scale(1.1);
+}
+
+#theme-1 {
+    background: linear-gradient(to right, rgb(255, 85, 85), rgb(255, 255, 0));
+}
+
+#theme-2 {
+    background: linear-gradient(to right, rgb(214, 33, 250), rgb(255, 70, 70));
+}
+
+#theme-3 {
+    background: linear-gradient(to right, rgb(0, 51, 255), rgb(0, 255, 187));
+}
+
+#theme-4 {
+    background: linear-gradient(to right, rgb(234, 255, 0),rgb(0, 255, 234));
+}
+
+#theme-5 {
+    background: linear-gradient(to right, rgb(0, 238, 255), rgb(255, 0, 191));
+}
+
+#theme-6 {
+    background: linear-gradient(to right, rgb(60, 255, 0), rgb(1, 132, 255));
+}
+
+.container {
+    display: flex;
+    position: relative;
+    height: 39px;
+    width: 115px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1;
+    margin-left: -100px;
+    transition: 1s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 39px;
+    background:rgb(75, 75, 75);
+    color: white;
+}
+
+.container.active {
+    margin-left: 0;
+    transition: 1s;
+}
+
+.logoButton.active {
+    transform: rotate(180deg);
+}
+
+.container .color-area {
+    position: relative;
+    border: 2px solid black;
+    height: 35px;
+    width: 95px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8, 0fr) 
+}
+
+ul li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+/* red */
+#red-a {
+    background-color:red;
+}
+
+#red-b {
+    background-color:rgb(255, 63, 63);
+}
+
+#red-c {
+    background-color:rgb(255, 127, 127);
+}
+
+/* orange */
+#orange-a {
+    background-color: orange;
+}
+
+#orange-b {
+    background-color: rgb(255, 189, 68);
+}
+
+#orange-c {
+    background-color: rgb(255, 211, 128);
+}
+
+/* yellow */
+#yellow-a {
+    background-color: yellow;
+}
+
+#yellow-b {
+    background-color: rgb(255, 255, 66);
+}
+
+#yellow-c {
+    background-color: rgb(255, 255, 124);
+}
+
+/* green */
+#green-a {
+    background-color: green;
+}
+
+#green-b {
+    background-color: rgb(68, 255, 68);
+}
+
+#green-c {
+    background-color: rgb(127, 255, 127);
+}
+
+/* blue */
+#blue-a {
+    background-color: blue;
+}
+
+#blue-b {
+    background-color: rgb(70, 70, 255);
+}
+
+#blue-c {
+    background-color: rgb(125, 125, 255);
+}
+
+/* violet */
+#violet-a {
+    background-color: violet;
+}
+
+#violet-b {
+    background-color: rgb(250, 190, 250);
+}
+
+#violet-c {
+    background-color: rgb(248, 222, 248);
+}
+
+/* purple */
+#purple-a {
+    background-color: purple;
+}
+
+#purple-b {
+    background-color: rgb(181, 0, 181);
+}
+
+#purple-c {
+    background-color: rgb(236, 0, 236);
+}
+
+/* black */
+#black-a {
+    background-color: black;
+}
+
+#black-b {
+    background-color: rgb(128, 127, 127);
+}
+
+#black-c {
+    background-color: white;
+}
+
+/* color selected styles */
+/* red */
+body.red-a::before {
+    background-color: red;
+    color: red;
+}
+
+body.red-b::before {
+    background-color:rgb(255, 63, 63);
+    color: rgb(255, 63, 63);
+}
+
+body.red-c::before {
+    background-color:rgb(255, 127, 127);
+    color: rgb(255, 127, 127);
+}
+
+/* orange */
+body.orange-a::before {
+    background-color: orange;
+    color: orange;
+}
+
+body.orange-b::before {
+    background-color: rgb(255, 189, 68);
+    color: rgb(255, 189, 68);
+}
+
+body.orange-c::before {
+    background-color: rgb(255, 211, 128);
+    color: rgb(255, 211, 128);
+}
+
+
+/* yellow */
+body.yellow-a::before {
+    background-color: yellow;
+    color: yellow;
+}
+
+body.yellow-b::before {
+    background-color: rgb(255, 255, 66);
+    color: rgb(255, 255, 66);
+}
+
+body.yellow-c::before {
+    background-color: rgb(255, 255, 124);
+    color: rgb(255, 255, 124);
+}
+
+
+/* green */
+body.green-a::before {
+    background-color: green;
+    color: green;
+}
+
+body.green-b::before {
+    background-color: rgb(68, 255, 68);
+    color: rgb(68, 255, 68);
+}
+
+body.green-c::before {
+    background-color: rgb(127, 255, 127);
+    color: rgb(127, 255, 127);
+}
+
+
+/* blue */
+body.blue-a::before {
+    background-color: blue;
+    color: blue;
+}
+
+body.blue-b::before {
+    background-color: rgb(70, 70, 255);
+    color: rgb(70, 70, 255);
+}
+
+body.blue-c::before {
+    background-color: rgb(125, 125, 255);
+    color: rgb(125, 125, 255);
+}
+
+
+/* violet */
+body.violet-a::before {
+    background-color: violet;
+    color: violet;
+}
+
+body.violet-b::before {
+    background-color: rgb(250, 190, 250);
+    color: rgb(250, 190, 250);
+}
+
+body.violet-c::before {
+    background-color: rgb(248, 222, 248);
+    color: rgb(248, 222, 248);
+}
+
+
+/* purple */
+body.purple-a::before {
+    background-color: purple;
+    color: purple;
+}
+
+body.purple-b::before {
+    background-color: rgb(181, 0, 181);
+    color: rgb(181, 0, 181);
+}
+
+body.purple-c::before {
+    background-color: rgb(236, 0, 236);
+    color: rgb(236, 0, 236);
+}
+
+
+/* black */
+body.black-a::before {
+    background-color: black;
+    color: black;
+}
+
+body.black-b::before {
+    background-color: rgb(128, 127, 127);
+    color: rgb(128, 127, 127);
+}
+
+body.black-c::before {
+    background-color: white;
+    color: white;
+}
+
+body.theme-1::before {
+    background: linear-gradient(to right, rgb(255, 85, 85), rgb(255, 255, 0));
+    color: linear-gradient(to right, rgb(255, 85, 85), rgb(255, 255, 0));
+}
+
+body.theme-2::before {
+    background: linear-gradient(to right, rgb(214, 33, 250), rgb(255, 70, 70));
+    color: linear-gradient(to right, rgb(214, 33, 250), rgb(255, 70, 70));
+}
+
+body.theme-3::before {
+    background: linear-gradient(to right, rgb(0, 51, 255), rgb(0, 255, 187));
+    color: linear-gradient(to right, rgb(0, 51, 255), rgb(0, 255, 187));
+}
+
+body.theme-4::before {
+    background: linear-gradient(to right, rgb(234, 255, 0),rgb(0, 255, 234));
+    color: linear-gradient(to right, rgb(234, 255, 0),rgb(0, 255, 234));
+}
+
+body.theme-5::before {
+    background: linear-gradient(to right, rgb(0, 238, 255), rgb(255, 0, 191));
+    color: linear-gradient(to right, rgb(0, 238, 255), rgb(255, 0, 191));
+}
+
+body.theme-6::before {
+    background: linear-gradient(to right, rgb(60, 255, 0), rgb(1, 132, 255));
+    color: linear-gradient(to right, rgb(60, 255, 0), rgb(1, 132, 255));
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
