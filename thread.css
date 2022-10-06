@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 a{
     color:#523A28;
@@ -191,4 +194,19 @@ header{
     margin-right:10px;
     color: #B98853;
     cursor: pointer;
+}
+
+.gotopbtn{
+    position:fixed;
+    width:50px;
+    height:50px;
+    background: transparent;
+    bottom:40px;
+    right:50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height:50px;
+    color: #FFFFFF;
+    font-size: 22px;
 }
