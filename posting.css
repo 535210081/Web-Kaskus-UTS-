@@ -15,7 +15,21 @@
 .content{
     flex: 80%;
 }
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+    
+}
 
+.navigate a{
+    color: #523A28;
+}
+
+.navigate a:hover{
+    color:#523A28;
+    font-weight: bolder;
+}
 .body{
     display: flex;
     background-color: #B98853;
@@ -95,6 +109,8 @@ body{
 
 .search-box input{
     padding: 10px;
+    background-color:#CA955C;
+    opacity: 80%;
 }
 
 .search-box button{
