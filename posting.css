@@ -105,12 +105,12 @@ body{
 
 .search-box select{
     padding: 10px;
+    background-color:#E3B7A0;
 }
 
 .search-box input{
     padding: 10px;
-    background-color:#CA955C;
-    opacity: 80%;
+    background-color:#E3B7A0;
 }
 
 .search-box button{
