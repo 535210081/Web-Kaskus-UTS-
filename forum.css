@@ -102,12 +102,15 @@ body{
 }
 
 
+
 .search-box select{
     padding: 10px;
+    background-color:#E3B7A0;
 }
 
 .search-box input{
     padding: 10px;
+    background-color:#E3B7A0;
 }
 
 .search-box button{
@@ -115,6 +118,7 @@ body{
     background-color:#fff;
     color:#000000;
 }
+
 
 header{
     margin-inline: 10px;
