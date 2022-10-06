@@ -77,8 +77,29 @@
             <div class="replyborder">Reply</div>
         </div>
         
-        <!--Comments Section-->
+       
         <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="">Femur</a></div>
+                    <img src="femur.jpg" alt="">
+                </div>
+                <div class="content">
+                  you sounds like you about are about to commit murder to your own team
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Reply Area-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+         <!--Comments Section-->
+         <div class="comments-container">
             <div class="body">
                 <div class="authors">
                     <div class="username"><a href="">Lumiere</a></div>
@@ -100,25 +121,6 @@
             <input type="submit" value="submit">
         </div>
 
-        <div class="comments-container">
-            <div class="body">
-                <div class="authors">
-                    <div class="username"><a href="">Femur</a></div>
-                    <img src="femur.jpg" alt="">
-                </div>
-                <div class="content">
-                  you sounds like you about are about to commit murder to your own team
-                    <div class="comment">
-                        <button onclick="showReply()">Reply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Reply Area-->
-        <div class="comment-area hide" id="reply-area">
-            <textarea name="reply" id="" placeholder="reply here ... "></textarea>
-            <input type="submit" value="submit">
-        </div>
 
         
     </div>
