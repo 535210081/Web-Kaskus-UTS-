@@ -93,12 +93,16 @@ span.onclick = function() {
     body_blur.classList.remove('blur');
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        $("#myModal").css("display","none");
-    }
-}
+
+const pop_button = document.querySelector('.pop-button');
+const creator_container_areabox = document.querySelector('.container-area-box');
+
+pop_button.addEventListener('click', function(){
+creator_container_areabox.classList.toggle('hide-pop');
+pop_button.classList.toggle('rotate');
+})
+
+
 
 function hideIconBar(){
     var iconBar = document.getElementById("iconBar");
@@ -115,3 +119,102 @@ function showIconBar(){
 }
 
 const content = document.getElementById("my-element3")
+
+//Creator details
+
+//close details
+const close_button_a = document.querySelector('.close-btn.a');
+
+close_button_a.addEventListener('click', function(){
+    creator_detail_a.classList.remove('active');
+    logo_details_a.classList.remove('active');
+})
+
+const close_button_b = document.querySelector('.close-btn.b');
+
+close_button_b.addEventListener('click', function(){
+    creator_detail_b.classList.remove('active');
+    logo_details_b.classList.remove('active');
+})
+
+const close_button_c = document.querySelector('.close-btn.c');
+
+close_button_c.addEventListener('click', function(){
+    creator_detail_c.classList.remove('active');
+    logo_details_c.classList.remove('active');
+})
+
+const close_button_d = document.querySelector('.close-btn.d');
+
+close_button_d.addEventListener('click', function(){
+    creator_detail_d.classList.remove('active');
+    logo_details_d.classList.remove('active');
+})
+
+//open details
+const logo_details_a = document.querySelector('.bi.bi-arrow-right-circle-a');
+const logo_details_b = document.querySelector('.bi.bi-arrow-right-circle-b');
+const logo_details_c = document.querySelector('.bi.bi-arrow-right-circle-c');
+const logo_details_d = document.querySelector('.bi.bi-arrow-right-circle-d');
+
+const detail_button_a = document.querySelector('.profile-detail.a');
+const creator_detail_a = document.querySelector('.creator.a');
+
+detail_button_a.addEventListener('click', function(){
+    creator_detail_a.classList.toggle('active');
+    logo_details_a.classList.toggle('active');
+    creator_detail_b.classList.remove('active');
+    creator_detail_c.classList.remove('active');
+    creator_detail_d.classList.remove('active');
+    logo_details_b.classList.remove('active');
+    logo_details_c.classList.remove('active');
+    logo_details_d.classList.remove('active');
+})
+
+const detail_button_b = document.querySelector('.profile-detail.b');
+const creator_detail_b = document.querySelector('.creator.b');
+
+detail_button_b.addEventListener('click', function(){
+    creator_detail_b.classList.toggle('active');
+    logo_details_b.classList.toggle('active');
+    creator_detail_a.classList.remove('active');
+    creator_detail_c.classList.remove('active');
+    creator_detail_d.classList.remove('active');
+    logo_details_a.classList.remove('active');
+    logo_details_c.classList.remove('active');
+    logo_details_d.classList.remove('active');
+})
+
+const detail_button_c = document.querySelector('.profile-detail.c');
+const creator_detail_c = document.querySelector('.creator.c');
+
+detail_button_c.addEventListener('click', function(){
+    creator_detail_c.classList.toggle('active');
+    logo_details_c.classList.toggle('active');
+    creator_detail_a.classList.remove('active');
+    creator_detail_b.classList.remove('active');
+    creator_detail_d.classList.remove('active');
+    logo_details_a.classList.remove('active');
+    logo_details_b.classList.remove('active');
+    logo_details_d.classList.remove('active');
+})
+
+
+const detail_button_d = document.querySelector('.profile-detail.d');
+const creator_detail_d = document.querySelector('.creator.d');
+
+detail_button_d.addEventListener('click', function(){
+    creator_detail_d.classList.toggle('active');
+    logo_details_d.classList.toggle('active');
+    creator_detail_a.classList.remove('active');
+    creator_detail_b.classList.remove('active');
+    creator_detail_c.classList.remove('active');
+    logo_details_a.classList.remove('active');
+    logo_details_b.classList.remove('active');
+    logo_details_c.classList.remove('active');
+})
+
+
+
+
+
