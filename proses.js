@@ -41,6 +41,7 @@ const body_blur = document.querySelector('body');
                 });
                 $("#myModal").css("display","none");
                 body_blur.classList.remove('blur');
+                document.getElementById("myBtn").innerHTML = `${usernameInput.value}`;
                 
             } else {
                 swal("Halaman kamu kembali semula");
@@ -64,7 +65,7 @@ const body_blur = document.querySelector('body');
             //localStorage.setItem("role", "basic");
             // member.style.display = "block";
             body_blur.classList.remove('blur');
-            
+            document.getElementById("myBtn").innerHTML = `${usernameInput.value}`;
         }
         
     }
