@@ -2,7 +2,80 @@ let usernameInput = document.getElementById('usernameInput');
 let passwordInput = document.getElementById('passwordInput');
 const body_blur = document.querySelector('body');
 
-    function login(){
+const user = usernameInput.value;
+document.getElementById("mybtn").style.display = 'none';
+
+function register2(){
+    console.log('tombol register berhasil di klik');
+    console.log(usernameInput.value);
+    console.log(passwordInput.value);
+    localStorage.setItem("username", usernameInput.value);
+    
+
+    if(usernameInput.value.trim() == "" || passwordInput.value.trim() == ""){
+        swal({
+        title: "Harus diisi keduanya ya.. :'",
+        icon: "info",
+        });
+    }
+    else if (usernameInput.value == "admin" && passwordInput.value == "admin"){
+        swal({
+        title: "Are you sure?",
+        text: "Kamu akan masuk sebagai Admin",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+        
+        })
+        .then((willDelete) => {
+        if (willDelete) {
+            swal(`Selamat datang ${usernameInput.value} >.<`, {
+            icon: "success",
+            
+            });
+            $('#myModal2').on('shown', function() {
+                // remove previous timeouts if it's opened more than once.
+                clearTimeout(myModalTimeout);
+            
+                // hide it after a minute
+                myModalTimeout = setTimeout(function() {
+                    $('#myModal2').modal('hide');
+                }, 6e4);
+            });
+            $("#myModal2").css("display","none");
+            body_blur.classList.remove('blur');
+            document.getElementById("myBtn").innerHTML = `${usernameInput.value}`;
+            
+        } else {
+            swal("Halaman kamu kembali semula");
+            $("#myModal2").css("display","none");
+            body_blur.classList.remove('blur');
+        }
+        });
+        kotak.style.display = "none";
+        localStorage.setItem("role", "basic");
+        $("#myModal2").css("display","none");
+        body_blur.classList.remove('blur');
+    }
+    else{
+        swal({
+        title: "Good job!",
+        text: `Akun telah berhasil dibuat! ${usernameInput.value} >.<`,
+        icon: "success",
+        });
+        // kotak.style.display = "none";
+        $("#myModal2").css("display","none");
+        //localStorage.setItem("role", "basic");
+        // member.style.display = "block";
+        body_blur.classList.remove('blur');
+        document.getElementById("myBtn").style.display = 'none';
+        document.getElementById("mybtn").style.display = 'block';
+    }
+    
+}
+
+console.log(user);
+function login(){
         console.log('tombol login berhasil di klik');
         console.log(usernameInput.value);
         console.log(passwordInput.value);
@@ -41,7 +114,7 @@ const body_blur = document.querySelector('body');
                 });
                 $("#myModal").css("display","none");
                 body_blur.classList.remove('blur');
-                document.getElementById("myBtn").innerHTML = `${usernameInput.value}`;
+                document.getElementById("mybtn").innerHTML = `${usernameInput.value}`;
                 
             } else {
                 swal("Halaman kamu kembali semula");
@@ -54,7 +127,7 @@ const body_blur = document.querySelector('body');
             $("#myModal").css("display","none");
             body_blur.classList.remove('blur');
         }
-        else{
+        else if(usernameInput.value.trim() == user){
             swal({
             title: "Good job!",
             text: `Selamat datang ${usernameInput.value} >.<`,
@@ -65,11 +138,18 @@ const body_blur = document.querySelector('body');
             //localStorage.setItem("role", "basic");
             // member.style.display = "block";
             body_blur.classList.remove('blur');
-            document.getElementById("myBtn").innerHTML = `${usernameInput.value}`;
+            document.getElementById("mybtn").innerHTML = `${usernameInput.value}`;
+        }
+        else{
+            swal({
+                title: "Username salah :'",
+                icon: "info",
+            });
         }
         
-    }
-    
+}
+
+
 //button serach
 const icon_btn = document.querySelector('.icon');
 const search = document.querySelector('.search');
@@ -82,16 +162,30 @@ icon_btn.addEventListener('click', function(){
 var span = document.getElementsByClassName("close")[0];
 
 
+function register(){
+    $("#myModal2").css("display","block");
+    body_blur.classList.add('blur');
+}
 
 function signin(){
+    console.log("hiiiii");
     $("#myModal").css("display","block");
     body_blur.classList.add('blur');
 }
 
+//Close icon
 span.onclick = function() {
+    console.log("close");
+    $("#myModal2").css("display","none");
+    body_blur.classList.remove('blur');
+}
+
+label.onclick = function(){
+    console.log("close");
     $("#myModal").css("display","none");
     body_blur.classList.remove('blur');
 }
+
 
 
 const pop_button = document.querySelector('.pop-button');
