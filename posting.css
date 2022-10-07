@@ -115,7 +115,7 @@ body{
 
 .search-box button{
     padding: 10px;
-    background-color:#fff;
+    background-color:#E3B7A0;
     color:#000000;
 }
 
@@ -145,12 +145,6 @@ header{
 
 .search-box input{
     padding: 10px;
-}
-
-.search-box button{
-    padding: 10px;
-    background-color:#fff;
-    color:#000000;
 }
 
 header{
