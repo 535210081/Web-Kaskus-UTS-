@@ -197,8 +197,7 @@
 
 .container-area-box {
     background:rgba(0, 0, 0, 0.6);
-    width: 206vh;
-    height: 350px;
+    width: 100%;
     overflow: hidden;
     transition: 2s;
 }
