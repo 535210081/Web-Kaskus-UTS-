@@ -3,6 +3,8 @@ let passwordInput = document.getElementById('passwordInput');
 const body_blur = document.querySelector('body');
 
 const user = usernameInput.value;
+const close_signin = document.getElementById('close_signin');
+const close_register = document.getElementById('close_register');
 document.getElementById("mybtn").style.display = 'none';
 
 function register2(){
@@ -127,7 +129,7 @@ function login(){
             $("#myModal").css("display","none");
             body_blur.classList.remove('blur');
         }
-        else if(usernameInput.value.trim() == user){
+        else{
             swal({
             title: "Good job!",
             text: `Selamat datang ${usernameInput.value} >.<`,
@@ -140,12 +142,7 @@ function login(){
             body_blur.classList.remove('blur');
             document.getElementById("mybtn").innerHTML = `${usernameInput.value}`;
         }
-        else{
-            swal({
-                title: "Username salah :'",
-                icon: "info",
-            });
-        }
+       
         
 }
 
@@ -174,19 +171,17 @@ function signin(){
 }
 
 //Close icon
-span.onclick = function() {
-    console.log("close");
+close_register.onclick = function() {
     $("#myModal2").css("display","none");
+    
     body_blur.classList.remove('blur');
 }
 
-label.onclick = function(){
-    console.log("close");
+close_signin.onclick = function() {
     $("#myModal").css("display","none");
+    
     body_blur.classList.remove('blur');
 }
-
-
 
 const pop_button = document.querySelector('.pop-button');
 const creator_container_areabox = document.querySelector('.container-area-box');
