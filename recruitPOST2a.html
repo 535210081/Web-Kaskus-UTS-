@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="postinga.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="threada.html">Thread</a></li>
+                    <li class="nav-item"><a href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a href="homepage.html #creator-part">About us</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           
+        </div>
+        <div class="search-box">
+            <div>
+                <select onchange="location = this.value;">
+                    <option value="threada.html">Show all</option>
+                    <option value="announcementa.html">Announcement</option>
+                    <option value="Mobilelegendsa.html">Mobile Legends</option>
+                    <option value="Valoranta.html">Valorant</option>
+                    <option value="PUBGa.html">PUBG</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+     <div class="container">
+  </header>
+       
+        <div class="navigate">
+            <span><a href="threada.html">Home</a> >> <a href="recruita.html">MCL recruitment</a> >> <a href="">we the MD is recruiting for member</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author : AshleyParade </div>
+                <div class="content">Topic: Mobile Legend</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="ashleyparade.html">AshleyParade</a></div>
+                    <img src="ashleyparade.jpg" alt="">
+                </div>
+                <div class="content">
+                MD or Moose Dynamos is recruiting member for the next MPL we accept anyone (depend on how you do on the test though)
+                <br>if you are interested DM us on Discord ASParade
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+             <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+            <div class ="replyblock">
+                <div class="replyborder">Reply</div>
+            </div>
+            
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="ados.html">Ados</a></div>
+                        <img src="ados.png" alt="">
+                    </div>
+                    <div class="content">
+                     count me in
+                    </div>
+                </div>
+            </div>
+    
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="blankslate.html">BlankSlate</a></div>
+                        <img src="blankslate.jpg" alt="">
+                    </div>
+                    <div class="content">
+                       a test? what test
+                    </div>
+                </div>
+            </div>
+         
+
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="alloysand.html">AlloySand</a></div>
+                        <img src="alloysand.jpg" alt="">
+                    </div>
+                    <div class="content">
+                      never heard of you guys
+                      <br> ya all new?
+                </div>
+            </div>
+            
+
+            
+    </div>
+ 
+    <script src="thread.js"></script>
+</body>
+</html>

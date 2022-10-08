@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="foruma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="threada.html">Thread</a></li>
+                    <li class="nav-item"><a href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a href="homepage.html #creator-part">About us</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select onchange="location = this.value;">
+                    <option value="threada.html">Show all</option>
+                    <option value="announcementa.html">Announcement</option>
+                    <option value="Mobilelegendsa.html">Mobile Legends</option>
+                    <option value="Valoranta.html">Valorant</option>
+                    <option value="PUBGa.html">PUBG</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+     <div class="container">
+  </header>
+  
+    <div class="container">
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="threada.html">Home</a> >> <a href="">Scam alert</a></span>
+        </div>
+        <!--Display posts table-->
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa-solid fa-user"></i></i></div>
+                <div class="subjects">  
+                    <a href="scamPOST1a.html ">Watch out for a scam</a>
+                    <br>
+                    <span>Started by <b><a href="admin.html">Admin</a></b> .</span>
+                </div>
+                <div class="replies">
+                   (comment is disabled) <br> 495 views
+                </div>
+
+                <div class="last-reply">
+                    Oct 11 2022
+                    <br>By <b><a href="">-</a></b>
+                </div>
+            </div>
+
+            <!--starts here-->
+            <div class="table-row">
+                <div class="status"><i class="fa-solid fa-user"></i></i></div>
+                <div class="subjects">
+                    <a href="scamPOST2a.html">Just clicking?</a>
+                    <br>
+                    <span>Started by <b><a href="okami.html">Okami</a></b> .</span>
+                </div>
+                <div class="replies">
+                    2 replies <br> 332 views
+                </div>
+
+                <div class="last-reply">
+                        Oct 12 2022
+                    <br>By <b><a href="">Ramirice</a></b>
+                </div>
+            </div>
+
+            <div class="table-row">
+                <div class="status"><i class="fa-solid fa-user"></i></i></div>
+                <div class="subjects">
+                    <a href="scamPOST3a.html">What to do</a>
+                    <br>
+                    <span>Started by <b><a href="twilight.html">Twilight</a></b> .</span>
+                </div>
+                <div class="replies">
+                     3 replies <br>  244 views
+                </div>
+
+                <div class="last-reply">
+                    Oct 12 2022
+                    <br>By <b><a href="">Twilight</a></b>
+                </div>
+            </div>
+
+        </div>
+
+  
+    <script src="proses.js"></script>
+</body>
+</html>
