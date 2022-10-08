@@ -15,7 +15,21 @@
 .content{
     flex: 80%;
 }
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+    
+}
 
+.navigate a{
+    color: #523A28;
+}
+
+.navigate a:hover{
+    color:#523A28;
+    font-weight: bolder;
+}
 .body{
     display: flex;
     background-color: #B98853;
@@ -91,16 +105,46 @@ body{
 
 .search-box select{
     padding: 10px;
+    background-color:#E3B7A0;
 }
 
 .search-box input{
     padding: 10px;
+    background-color:#E3B7A0;
 }
 
 .search-box button{
     padding: 10px;
-    background-color:#fff;
+    background-color:#E3B7A0;
     color:#000000;
+}
+
+header{
+    margin-inline: 10px;
+}
+
+.navbar{
+    display: flex;
+    padding-top: 9px;
+    animation: slideInLeft;
+    animation-duration: 2s;
+    
+}
+
+.navbars:hover {
+    font-size: 16px;
+    transition: 0.7s;
+    animation: slideInLeft;
+    animation-duration: 2s;
+}
+
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
 }
 
 header{
@@ -120,6 +164,8 @@ header{
     max-height: 80px;
     margin-right:10px;
     opacity: 65%;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .close-icon i{
@@ -131,6 +177,8 @@ header{
 .nav-list{
     list-style-type:none;
     overflow: hidden;
+    animation: slideInLeft;
+    animation-duration: 2s;
 }
 
 .nav-item a{
@@ -158,6 +206,7 @@ header{
     color: #B98853;
     cursor: pointer;
 }
+
 
 .postimg{
     flex:20%;

@@ -3,6 +3,8 @@
     justify-content: center;
     margin-top: -10px;
 }
+
+
 .container-content{
     display: flex;
     margin-top: 70px;
@@ -86,11 +88,28 @@
     margin: 3%;
 }
 
+
 .texting {
     font-family: 'Common Pixel', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow:  1px 1px 5px rgb(170, 7, 240);
     color: rgb(238, 255, 0);
     padding-bottom: -20%;
+}
+
+.profile-detail {
+    width: 60px;
+    height: 20px;
+    margin-top: -10px;
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.profile-detail:hover {
+    color: #fd004c;
+    transition: 2s;
 }
 
 .container-about-info {
@@ -178,12 +197,133 @@
 
 .container-area-box {
     background:rgba(0, 0, 0, 0.6);
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.container-area-box.hide-pop {
+    height: 0px;
+    transition: 2s;
 }
 
 #discord-logo {
     color: white;
+}
+
+.pop-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+    z-index: 4;
+    color: white;
+    border-radius: 5px;
+    transition: 2s;
+}
+
+.pop-button.rotate {
+    transform: rotate(180deg);
+    transition: 2s;
+}
+
+.pop-button:hover {
+    color: #fd004c;
+    transition: 1s;
+}
+
+.content.a .profile-detail {
+    margin-left: 80px;
+}
+
+.content.b .profile-detail {
+    margin-left: 80px;
+}
+
+.content.c .profile-detail {
+    margin-left: 80px;
+}
+
+.content.d .profile-detail {
+    margin-left: 80px;
+}
+
+.creator {
+    display: flex;
+    position: relative;
+    width: 160px;
+    height: 240px;
+    background: transparent;
+    transition: 2s;
+    z-index: 0;
+}
+
+
+.creator.a.active {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+
+.creator.b.active {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+
+.creator.c.active {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+
+.creator.d.active {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+
+.close-btn {
+    position: absolute;
+    color: white;
+    right: 2%;
+    z-index: -1;
+}
+
+.bi {
+    transition: 2s;
+}
+
+.bi:hover {
+    color: #fd004c;
+    transition: 1s;
+}
+
+.bi.bi-arrow-right-circle-a.active {
+    transform: rotate(180deg);
+    transition: 2s;
+    color: #fd004c;
+}
+
+.bi.bi-arrow-right-circle-b.active {
+    transform: rotate(180deg);
+    transition: 2s;
+    color: #fd004c;
+}
+
+.bi.bi-arrow-right-circle-c.active {
+    transform: rotate(180deg);
+    transition: 2s;
+    color: #fd004c;
+}
+
+.bi.bi-arrow-right-circle-d.active {
+    transform: rotate(180deg);
+    transition: 2s;
+    color: #fd004c;
 }
 
 @keyframes spin {
