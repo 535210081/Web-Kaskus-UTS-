@@ -200,3 +200,17 @@ header{
     color: #FFFFFF;
     font-size: 22px;
 }
+.pallete{
+    width:40px;
+}
+.theme{
+    display: flex;
+    background-color:#0E86D4;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 70%;
+}
+.border{
+    opacity: 0%;
+}
