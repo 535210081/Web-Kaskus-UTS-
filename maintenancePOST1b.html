@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="postingb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="threadb.html">Thread</a></li>
+                    <li class="nav-item"><a href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a href="homepage.html #creator-part">About us</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           
+        </div>
+        <div class="search-box">
+            <div>
+                <select onchange="location = this.value;">
+                    <option value="announcementb.html">Announcement</option>
+                    <option value="Mobilelegendsb.html">Mobile Legends</option>
+                    <option value="threadb.html">Show all</option>
+                    <option value="Valorantb.html">Valorant</option>
+                    <option value="PUBGb.html">PUBG</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+     <div class="container">
+  </header>
+       
+        <div class="navigate">
+            <span><a href="threadb.html">Home</a> >> <a href="maintenanceb.html">This website will having a maintenance in 5PM-8PM GMT</a> >> <a href="">Maintenance time extension</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author : Admin </div>
+                <div class="content">Topic: Web Announcement</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="admin.html">Admin</a></div>
+                    <img src="admin.jpg" alt="">
+                </div>
+                <div class="content">
+                   the maintenance time that was schewduled today might be extended
+                   <br>in this maintenance we are going to :
+                   <br>-have some bug fix
+                   <br>fix some minor design mistakes
+                   <br>and enforcing rules where we will delete a comment that does not have anything to do with the topic 
+                   <br>(example : spam or offtopic thread)
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+        
+        <div class ="replyblock">
+            <div class="replyborder">Reply</div>
+        </div>
+        
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="quantum.html">Quantum</a></div>
+                    <img src="Quantum.jpg" alt="">
+                </div>
+                <div class="content">
+                   Another moth bite the dust
+                    
+                </div>
+            </div>
+        </div>
+       
+
+        <!--Another Comment With replies-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="twilight.html">Twilight</a></div>
+                    <img src="Twilight.jpg" alt="">
+                </div>
+                <div class="content">
+                 ha ha ha 
+                    <br>
+                 <br> im in danger
+                   
+                </div>
+            </div>
+        </div>
+     
+         <!--Another Comment With replies-->
+         <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="rhea.html">Rhea</a></div>
+                    <img src="rhea.jpg" alt="">
+                </div>
+                <div class="content">
+                  R.I.P moth
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+    </div>
+ 
+    <script src="thread.js"></script>
+</body>
+</html>

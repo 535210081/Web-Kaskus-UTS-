@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="postingb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="threadb.html">Thread</a></li>
+                    <li class="nav-item"><a href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a href="homepage.html #creator-part">About us</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           
+        </div>
+        <div class="search-box">
+            <div>
+                <select onchange="location = this.value;">
+                    <option value="announcementb.html">Announcement</option>
+                    <option value="Mobilelegendsb.html">Mobile Legends</option>
+                    <option value="threadb.html">Show all</option>
+                    <option value="Valorantb.html">Valorant</option>
+                    <option value="PUBGb.html">PUBG</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+     <div class="container">
+  </header>
+       
+        <div class="navigate">
+            <span><a href="threadb.html">Home</a> >> <a href="updatepatchb.html">Update Patch</a> >> <a href="">i am moth</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author : Twilight </div>
+                <div class="content">Topic: Valorant</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="twilight.html">Twilight</a></div>
+                    <img src="Twilight.jpg" alt="">
+                </div>
+                <div class="content">
+                  We are moth
+                        
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Comment Area-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+            <input type="submit" value="submit">
+        </div>
+
+        <div class ="replyblock">
+            <div class="replyborder">Reply</div>
+        </div>
+        
+
+
+        <!--Comments Section-->
+        <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="temi.html">Temi</a></div>
+                    <img src="Temi.jpg" alt="">
+                </div>
+                <div class="content">
+                 Moth
+                    
+                </div>
+            </div>
+        </div>
+        
+
+           <!--Comments Section-->
+           <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="lumiere.html">Lumiere</a></div>
+                    <img src="Lumiere.gif" alt="">
+                </div>
+                <div class="content">
+                    Moth
+                
+                   
+                </div>
+            </div>
+        </div>
+      
+           <!--Comments Section-->
+           <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="mao.html">Mao</a></div>
+                    <img src="mao.jpg" alt="">
+                </div>
+                <div class="content">
+                Moth
+                    
+                </div>
+            </div>
+        </div>
+       
+
+
+           <!--Comments Section-->
+           <div class="comments-container">
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="izayona.html">Izayona</a></div>
+                    <img src="izayona.jpg" alt="">
+                </div>
+                <div class="content">
+                   Why im here
+                
+                </div>
+            </div>
+        </div>
+       
+    </div>
+ 
+    <script src="thread.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="postingb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="threadb.html">Thread</a></li>
+                    <li class="nav-item"><a href="homepage.html">Homepage</a></li>
+                    <li class="nav-item"><a href="homepage.html #creator-part">About us</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           
+        </div>
+        <div class="search-box">
+            <div>
+                <select onchange="location = this.value;">
+                    <option value="announcementb.html">Announcement</option>
+                    <option value="Mobilelegendsb.html">Mobile Legends</option>
+                    <option value="threadb.html">Show all</option>
+                    <option value="Valorantb.html">Valorant</option>
+                    <option value="PUBGb.html">PUBG</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+     <div class="container">
+  </header>
+       
+        <div class="navigate">
+            <span><a href="threadb.html">Home</a> >> <a href="recruitb.html">MCL recruitment</a> >> <a href="">EB recruiting for a Tank player</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author : Cowline </div>
+                <div class="content">Topic: Mobile Legend</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="cowline.html">Cowline</a></div>
+                    <img src="cowline.jpg" alt="">
+                </div>
+                <div class="content">
+                 We the EB or Eternal Energy recruiting player.
+                 <br>We currently in need of tank player (Franco player if possible)
+                 <br>text me your username and the hero you will use,we will later test you on later date
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+            </div>
+             <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+            <div class ="replyblock">
+                <div class="replyborder">Reply</div>
+            </div>
+            
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="kriseter.html">Kriseter</a></div>
+                        <img src="kriseter.jpg" alt="">
+                    </div>
+                    <div class="content">
+                      My user name is Kriseter ,the hero i use is Jhonson
+                    
+                    </div>
+                </div>
+            </div>
+         
+
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="chrome.html">Chrome</a></div>
+                        <img src="chrome.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        a tank eh?
+                        <br>sure my user name is Chrome,i use kaja
+                        
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="bourbon.html">Bourbon</a></div>
+                        <img src="bourbon.jpg" alt="">
+                    </div>
+                    <div class="content">
+                       my user name is AMR808 ,i use franco 
+                       <br>im a top global at rank 43
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="boabob.html">BoaBob</a></div>
+                        <img src="boabob.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        count me in,im a Franco user with win rate 78% ,543 matches
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class=""><a href="windtopics.html">WindTopics</a></div>
+                        <img src="windtopics.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        User name WDTPC,Hero : Tigreal
+                        
+                    </div>
+                </div>
+            </div>
+         
+        </div>    
+    </div>
+ 
+    <script src="thread.js"></script>
+</body>
+</html>
