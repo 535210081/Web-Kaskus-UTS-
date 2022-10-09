@@ -1,4 +1,4 @@
-var words = ['halo'],
+var words = ['Valorant New Update !? MPL Schedule !? PUBG Update ?! Check it out ! '],
     part,
     i = 0,
     offset = 0,
