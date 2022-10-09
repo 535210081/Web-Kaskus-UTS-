@@ -1,15 +1,23 @@
 html {
     scroll-behavior: smooth;
+    animation: backInUp;
+    animation-duration: 1s;
 }
+
 
 a{
     color:#523A28;
     font-weight: bolder;
     text-decoration: none;
+    animation: backInUp;
+    animation-duration: 3s;
 }
+
 
 .subforum{
     margin-top:20px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .subforum-title{
@@ -19,11 +27,15 @@ a{
     margin:4px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px, rgba(0, 0, 0, 0.22) 0px 20px 20px;
     opacity: 70%;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .subforum-row{
     display: grid;
     grid-template-columns: 7% 60% 13% 20%;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .subforum-column{
@@ -33,6 +45,8 @@ a{
     background-color:#E4D4C8;
     opacity:75%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .subforum-description *{
@@ -42,23 +56,24 @@ a{
 .center{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .subforum-icon i{
     font-size: 45px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .subforum-devider{
     display: none;   
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 body{
     background-image: url('brownbg.gif');
     background-size: cover;
-    
-    
-    
     height: 100vh;
     padding:0;
     margin:0;
@@ -70,6 +85,8 @@ h1{
 
 #instagram{
     color:#523A28;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 
@@ -78,64 +95,85 @@ h1{
 .search-box select{
     padding: 10px;
     background-color:#E3B7A0;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .search-box input{
     padding: 10px;
     background-color:#E3B7A0;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .search-box button{
     padding: 10px;
     background-color:#E3B7A0;
     color:#000000;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .search-box select{
     padding: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .search-box input{
     padding: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 header{
     margin-inline: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
   /* Nav Bar styles */
   .navbar{
     display: flex;
     padding-top: 9px;
+    animation: backInUp;
+    animation-duration: 3s;
     
 }
 
 .navbars:hover {
     font-size: 16px;
     transition: 0.7s;
-    animation: slideInLeft;
-    animation-duration: 2s;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 
 .search-box select{
     padding: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .search-box input{
     padding: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 
 
 header{
     margin-inline: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .navbar{
     display:flex;
     align-items: center;
-    animation: slideInLeft;
-    animation-duration: 2s;
+    animation: backInUp;
+    animation-duration: 3s;
+    
 }
 .navigation{
     background-color:#D0B49F;
@@ -160,7 +198,7 @@ header{
     list-style-type:none;
     overflow: hidden;
     animation: slideInLeft;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 .nav-item a{
@@ -171,10 +209,14 @@ header{
     font-size: 20px;
     padding: 10px;
     color:#523A28;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .nav-item a:hover{
     background-color: rgb(0,0,0,0.1);
+    animation: backInUp;
+    animation-duration: 3s;
 }
 
 .hide{
@@ -187,6 +229,7 @@ header{
     margin-right:10px;
     color: #B98853;
     cursor: pointer;
+    
 }
 
 .gotopbtn{
@@ -205,6 +248,8 @@ header{
 }
 .pallete{
     width:40px;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 .theme{
     display: flex;
@@ -213,6 +258,8 @@ header{
     font-weight: bold;
     font-size: 15px;
     opacity: 70%;
+    animation: backInUp;
+    animation-duration: 3s;
 }
 .border{
     opacity: 0%;
