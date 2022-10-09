@@ -226,8 +226,8 @@ const close_button_a = document.querySelector('.close-btn.a');
 close_button_a.addEventListener('click', function(){
     creator_detail_a.classList.remove('active');
     logo_details_a.classList.remove('active');
-    full_name_area_a.remove('active');
-    info_area_a.remove('active');
+    full_name_area_a.classList.remove('active');
+    info_area_a.classList.remove('active');
 })
 
 const close_button_b = document.querySelector('.close-btn.b');
@@ -235,8 +235,8 @@ const close_button_b = document.querySelector('.close-btn.b');
 close_button_b.addEventListener('click', function(){
     creator_detail_b.classList.remove('active');
     logo_details_b.classList.remove('active');
-    full_name_area_b.remove('active');
-    info_area_b.remove('active');
+    full_name_area_b.classList.remove('active');
+    info_area_b.classList.remove('active');
 })
 
 const close_button_c = document.querySelector('.close-btn.c');
@@ -244,8 +244,8 @@ const close_button_c = document.querySelector('.close-btn.c');
 close_button_c.addEventListener('click', function(){
     creator_detail_c.classList.remove('active');
     logo_details_c.classList.remove('active');
-    full_name_area_c.remove('active');
-    info_area_c.remove('active');
+    full_name_area_c.classList.remove('active');
+    info_area_c.classList.remove('active');
 })
 
 const close_button_d = document.querySelector('.close-btn.d');
@@ -253,8 +253,8 @@ const close_button_d = document.querySelector('.close-btn.d');
 close_button_d.addEventListener('click', function(){
     creator_detail_d.classList.remove('active');
     logo_details_d.classList.remove('active');
-    full_name_area_d.remove('active');
-    info_area_d.remove('active');
+    full_name_area_d.classList.remove('active');
+    info_area_d.classList.remove('active');
 })
 
 //open details
