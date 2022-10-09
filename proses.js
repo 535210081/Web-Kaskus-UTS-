@@ -184,7 +184,7 @@ close_signin.onclick = function() {
 }
 
 const pop_button = document.querySelector('.pop-button');
-const creator_container_areabox = document.querySelector('.container-area-box');
+const creator_container_areabox = document.querySelector('.container-area-box.creator');
 
 pop_button.addEventListener('click', function(){
 creator_container_areabox.classList.toggle('hide-pop');
