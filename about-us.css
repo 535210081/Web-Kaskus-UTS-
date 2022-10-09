@@ -326,6 +326,40 @@
     color: #fd004c;
 }
 
+.full-name {
+    position: absolute;
+    background-color: #fd004c;
+    margin-top: 25px;
+    right: 5%;
+    width: 200px;
+    height: 35px;
+    z-index: -1;
+    opacity: 0%;
+    transition: 2s;
+}
+
+.creator-info {
+    position: absolute;
+    background-color: blue;
+    margin-top: 75px;
+    right: 5%;
+    width: 200px;
+    height: 150px;
+    z-index: -1;
+    opacity: 0%;
+    transition: 2s;
+}
+
+.full-name.active {
+    opacity: 100%;
+    transition: 2s;
+}
+
+.creator-info.active {
+    opacity: 100%;
+    transition: 2s;
+}
+
 @keyframes spin {
     100%{
         transform: rotate(-360deg);

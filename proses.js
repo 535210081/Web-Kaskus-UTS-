@@ -211,12 +211,23 @@ const content = document.getElementById("my-element3")
 
 //Creator details
 
+const full_name_area_a = document.querySelector('.full-name.a');
+const full_name_area_b = document.querySelector('.full-name.b');
+const full_name_area_c = document.querySelector('.full-name.c');
+const full_name_area_d = document.querySelector('.full-name.d');
+const info_area_a = document.querySelector('.creator-info.a');
+const info_area_b = document.querySelector('.creator-info.b');
+const info_area_c = document.querySelector('.creator-info.c');
+const info_area_d = document.querySelector('.creator-info.d');
+
 //close details
 const close_button_a = document.querySelector('.close-btn.a');
 
 close_button_a.addEventListener('click', function(){
     creator_detail_a.classList.remove('active');
     logo_details_a.classList.remove('active');
+    full_name_area_a.remove('active');
+    info_area_a.remove('active');
 })
 
 const close_button_b = document.querySelector('.close-btn.b');
@@ -224,6 +235,8 @@ const close_button_b = document.querySelector('.close-btn.b');
 close_button_b.addEventListener('click', function(){
     creator_detail_b.classList.remove('active');
     logo_details_b.classList.remove('active');
+    full_name_area_b.remove('active');
+    info_area_b.remove('active');
 })
 
 const close_button_c = document.querySelector('.close-btn.c');
@@ -231,6 +244,8 @@ const close_button_c = document.querySelector('.close-btn.c');
 close_button_c.addEventListener('click', function(){
     creator_detail_c.classList.remove('active');
     logo_details_c.classList.remove('active');
+    full_name_area_c.remove('active');
+    info_area_c.remove('active');
 })
 
 const close_button_d = document.querySelector('.close-btn.d');
@@ -238,9 +253,12 @@ const close_button_d = document.querySelector('.close-btn.d');
 close_button_d.addEventListener('click', function(){
     creator_detail_d.classList.remove('active');
     logo_details_d.classList.remove('active');
+    full_name_area_d.remove('active');
+    info_area_d.remove('active');
 })
 
 //open details
+
 const logo_details_a = document.querySelector('.bi.bi-arrow-right-circle-a');
 const logo_details_b = document.querySelector('.bi.bi-arrow-right-circle-b');
 const logo_details_c = document.querySelector('.bi.bi-arrow-right-circle-c');
@@ -258,6 +276,14 @@ detail_button_a.addEventListener('click', function(){
     logo_details_b.classList.remove('active');
     logo_details_c.classList.remove('active');
     logo_details_d.classList.remove('active');
+    full_name_area_a.classList.toggle('active');
+    full_name_area_b.classList.remove('active');
+    full_name_area_c.classList.remove('active');
+    full_name_area_d.classList.remove('active');
+    info_area_a.classList.toggle('active');
+    info_area_b.classList.remove('active');
+    info_area_c.classList.remove('active');
+    info_area_d.classList.remove('active');
 })
 
 const detail_button_b = document.querySelector('.profile-detail.b');
@@ -272,6 +298,14 @@ detail_button_b.addEventListener('click', function(){
     logo_details_a.classList.remove('active');
     logo_details_c.classList.remove('active');
     logo_details_d.classList.remove('active');
+    full_name_area_b.classList.toggle('active');
+    full_name_area_a.classList.remove('active');
+    full_name_area_c.classList.remove('active');
+    full_name_area_d.classList.remove('active');
+    info_area_b.classList.toggle('active');
+    info_area_a.classList.remove('active');
+    info_area_c.classList.remove('active');
+    info_area_d.classList.remove('active');
 })
 
 const detail_button_c = document.querySelector('.profile-detail.c');
@@ -286,6 +320,14 @@ detail_button_c.addEventListener('click', function(){
     logo_details_a.classList.remove('active');
     logo_details_b.classList.remove('active');
     logo_details_d.classList.remove('active');
+    full_name_area_c.classList.toggle('active');
+    full_name_area_b.classList.remove('active');
+    full_name_area_a.classList.remove('active');
+    full_name_area_d.classList.remove('active');
+    info_area_c.classList.toggle('active');
+    info_area_b.classList.remove('active');
+    info_area_a.classList.remove('active');
+    info_area_d.classList.remove('active');
 })
 
 
@@ -301,6 +343,14 @@ detail_button_d.addEventListener('click', function(){
     logo_details_a.classList.remove('active');
     logo_details_b.classList.remove('active');
     logo_details_c.classList.remove('active');
+    full_name_area_d.classList.toggle('active');
+    full_name_area_b.classList.remove('active');
+    full_name_area_c.classList.remove('active');
+    full_name_area_a.classList.remove('active');
+    info_area_d.classList.toggle('active');
+    info_area_b.classList.remove('active');
+    info_area_c.classList.remove('active');
+    info_area_a.classList.remove('active');
 })
 
 
