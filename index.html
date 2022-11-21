@@ -60,7 +60,8 @@
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#" id="myBtn" onclick="signin()">SIGN IN!</a>
+      <a class="nav-link" href="#" id="myBtn" onclick="register()">REGISTER!</a>
+      <a class="nav-link" href="#" id="mybtn" onclick="signin()">SIGN IN NOW!</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#creator-part" >About Us</a>
@@ -77,6 +78,10 @@
     </div>
   </ul>
 
+  <div>
+    <a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+  </div>
+  
     
 </header>
 
@@ -137,16 +142,19 @@
 </div>
 
 <!-- About US -->
-<br><br><br>
-<div>
+<br><br>
+
 <div class="container-about-info" data-aos="fade-right"  data-aos-duration="2000">
+  <div class="container-area-box" >
   <div class="container-title">
-    <h3 id="title-creator">About us</h3>
+    <a href="thread.html" class="link_button"></a>
+    <h2 role="button" onclick="thread.html" id="title-creator">Hot Topics</h2>
   </div>
-  
-  <div class="container-word">
-    <div class="word"></div>
-  </div>
+    <div class="container-creator" >
+      <div class="container-word"><br>
+        <div class="word"></div>
+      </div>
+    </div> 
   
 </div>
 <div class="container-creator-area" id="main_page" data-aos="fade-right"  data-aos-duration="2000">
@@ -156,50 +164,166 @@
 
 <br><br><br>
 <div class="container-creator-area" data-aos="fade-down" >
-  <h3 id="title-creator">Creator</h3>
+  <h3 id="title-creator" id="creator-part">Creator</h3>
+  <div class="pop-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+      <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+  </div>
 </div>
-<div class="container-area-box" >
+
+<div class="container-area-box creator" >
     <div class="container-creator" id="creator-part">
       <div class="container-content">
-        <div class="content a" data-aos="flip-right"  data-aos-duration="3000">
-            <div id="pic1" >
-                <h3 class="texting" data-aos="fade-right">Justin</h3> <br>
-                <img src="Asset/1.png" alt="Not available" class="propic"> <br>
-                <p class="texting">WindGaze#1303</p>
+        <div class="creator a">
+          <div class="content a" data-aos="flip-right"  data-aos-duration="3000">
+              <div id="pic1" >
+                  <h3 class="texting" data-aos="fade-right">Justin</h3> <br>
+                  <img src="Asset/1.png" alt="Not available" class="propic"> <br>
+                  <p class="texting">WindGaze#1303</p>
+                  <div class="profile-detail a">details
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-a" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </div>
+              </div>
             </div>
-          </div>
+            <div class="full-name a">Justine Widjaja</div>
+            <div class="creator-info a">NIM : 535210056
+              <br>Umur : 19
+              <br>Prodi: Teknik Informatika
+              <br>Fakultas : FTI
+            </div>
+            <div class="close-btn a">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </div>
+        </div>
+
+        <div class="creator b">
             <div class="content b" data-aos="flip-right" data-aos-duration="3000">
               <div id="pic1" >
                   <h3 class="texting" data-aos="fade-up">Steven</h3> <br>
                   <img src="Asset/2.png" alt="Not available" class="propic1"> <br>
                   <p class="texting">Suki#0215</p>
+                  <div class="profile-detail b">details
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-b" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </div>
             </div>
           </div>
+          <div class="full-name b">Steven Suki</div>
+            <div class="creator-info b">NIM : 535210058
+              <br>Umur : 19
+              <br>Prodi: Teknik Informatika
+              <br>Fakultas : FTI
+            </div>
+          <div class="close-btn b">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" >
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="creator c">
             <div class="content c" data-aos="flip-right" data-aos-duration="3000">
             <div id="pic1" >
                     <h3 class="texting" data-aos="fade-down">Dony</h3> <br>
                     <img src="Asset/3.png" alt="Not available" class="propic2"> <br>
-                    <p class="texting">Woku#6594</p>
+                    <p class="texting">Woku#6594</p> 
+                    <div class="profile-detail c">details
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-c" viewBox="0 0 16 16" >
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                      </svg>
+                    </div>
             </div>
           </div>
-            <div class="content d" data-aos="flip-right" data-aos-duration="3000">
-                <div id="pic1" >
-                    <h3 class="texting" data-aos="fade-left">Joseph</h3> <br>
-                      <img src="Asset/4.png" alt="Not availabele" class="propic3"> <br>
-                      <p class="texting">Boosted#9586</p>
+          <div class="full-name c">Dony</div>
+          <div class="creator-info c">NIM : 535210081
+              <br>Umur : 18
+              <br>Prodi: Teknik Informatika 
+              <br>Fakultas : FTI
+          </div>
+          <div class="close-btn c">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="creator d">
+              <div class="content d" data-aos="flip-right" data-aos-duration="3000">
+                  <div id="pic1" >
+                      <h3 class="texting" data-aos="fade-left">Joseph</h3> <br>
+                        <img src="Asset/4.png" alt="Not availabele" class="propic3"> <br>
+                        <p class="texting">Boosted#9586</p>
+                        <div class="profile-detail d">details
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-d" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>
+                        </div>
+              </div>
             </div>
+            <div class="full-name d">Joseph Kristianto</div>
+            <div class="creator-info d">NIM : 535210059 
+              <br>Umur : 19
+              <br>Prodi: Teknik Informatika
+              <br>Fakultas : FTI
+            </div>
+            <div class="close-btn d">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </div>
+
           </div>
       </div>
     </div>
 </div>
-<a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+
+<div class="footer-end">
+  <div class="footer-word">GAMER FORCE</div>
+</div>
 </div>
 
+<!-- The Modal -->
+<div id="myModal2" class="modalnew">
 
-  <script>
-    feather.replace()
-    
-  </script>
+  <!-- Modal content -->
+    <div class="modal-content">
+        <!-- Pop Up Register -->
+      <div class="my-element2">
+        <div class="container" id="kotak">
+          <div class="row">
+
+            <div class="col mt-5 mx-5 border rounded">
+              <form class="pb-3">
+                <div class="pointer">
+                <span class="close" id="close_register">&times;</span>
+                </div>
+                <h4 class="my-2" id="my-element">REGISTER</h4>
+                
+                <div class="form-group">
+                  <label id="my-element">UserName</label>
+                  <input type="text" class="form-control" id="usernameInput" placeholder="Username" autocomplete="off" required>
+                </div>
+
+                <div class="form-group">
+                  <label id="my-element">Password</label>
+                  <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                </div>
+                <h6 class="my-2" id="my-element">Ketik keduanya admin jika anda admin</h6>
+                <button type="button" class="btn btn-light"  data-dismiss="modal" onclick="register2()">Register</button>
+              </form>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modalnew">
@@ -214,7 +338,7 @@
             <div class="col mt-5 mx-5 border rounded">
               <form class="pb-3">
                 <div class="pointer">
-                <span class="close">&times;</span>
+                <span class="close" id="close_signin">&times;</span>
                 </div>
                 <h4 class="my-2" id="my-element">SIGN-IN</h4>
                 
@@ -235,8 +359,9 @@
           </div>
       </div>
     </div>
+</div>
 
-  
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -254,6 +379,6 @@
 <script src="animation-text.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/973de9207c.js" crossorigin="anonymous"></script>
-
+<script src="backproses.js"></script>
 
 </html>
